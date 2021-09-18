@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+* div::before, * div::after {
+  content: '';
+  clear: both;
+  display: inherit
+}
+body {
+  background-color: #fff4f4;
+  font-family: Verdana, Tahoma, Georgia, Arial;
+  color: #555
+}
+a {text-decoration: none!important}
+
+#headerSection {
+  background: teal;
+  display: flex;
+  width: 100%;
+  padding: 0 5%;
+  font-size: 18px
+}
+#headerSection a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 2px
+}
+
+.headerLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.headerLeft img {
+  width: 300px;
+  margin-right: 20px
+}
+.headerRight {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#MainSection {
+	margin: 30px auto;
+}
+.articles, .loginArea, .RegisterArea {
+  float: left;
+}
+
+/* Login Styles */
+.loginArea, .RegisterArea {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+}
+form label, form input, form button, form textarea {
+  display: block;
+  width: 100%
+}
+form label {
+  margin-left: 8px;
+  margin-top: 15px
+}
+form input, form textarea {
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  border-radius: 50px;
+}
+form #searchTxt {
+  border-radius: 0
+}
+form textarea {
+  border-radius: 2px;
+  height: 200px
+}
+.form_submit button {
+  padding: 8px 25px
+}
+.argicles_title {
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px
+}
+::placeholder {
+  color: #999
+}
+
+#Search {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 25px
+}
+#searchTxt {
+  border: none;
+  width: 100%;
+  padding: 8px 15px;
+}
+#searchSubmit {
+  border: none;
+  width: 60px;
+  color: #888
+}
+.articleWrapper {
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden
+}
+.authorPic {
+  margin-right: 12px
+}
+
+.authorPic img {
+  width: 50px
+}
+.articleInfo span {
+  color: darkorange
+}
+.articleContent {
+  margin: 15px 0 25px;
+}
+.articleContent h1 {
+  color: teal
+}
+.articleContent img {
+  width: 180px;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 4px;
+}
+.articleContent p {
+  text-align: justify;
+  line-height: 1.7;
+}
+.readMore {
+  border: 1px solid darkorange;
+  padding: 8px 20px;
+  display: inline-block;
+  border-radius: 50px;
+  color: teal;
+  transition: 300ms
+}
+.readMore:hover {
+  color: darkorange;
+  border-color: teal
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px
+}
+.pagination a {
+  border: 1px solid #ccc;
+  color: #222;
+  padding: 5px 15px;
+  border-radius: 50px;
+  margin: 0 2px
+}
+.pagination a.active {
+  color: limegreen;
+  border: 1px solid darkorange
+}
+
+.rightSidebar {
+  position: sticky;
+  top: 15px;
+  float: left;
+}
+.rightSidebar h2 {
+  margin-bottom: 15px
+}
+.rightSidebar a {
+  display: block;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: -1px;
+}
+#footerSection {
+  background: teal;
+  text-align: center;
+}
+#footerSection p {
+  margin: initial;
+  color: white
+}
+.footerLeft, .footerRight {
+  width: 50%;
+  float: left;
+  padding: 25px 15px
+}
+#jump-to-top {
+  position: fixed;
+  bottom: -4em;
+  right: 1em;
+  background: #f7f7f7;
+  border-radius: 50%;
+  transition: opacity, bottom, 300ms;
+  opacity: 0;
+  border: 1px solid #e3e3e3;
+  box-shadow: 1px 1px 8px #ddd;
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px
+}
+#jump-to-top.show {
+  opacity: 1;
+  bottom: 1em
+}
+#jump-to-top .fa-arrow-up {
+  font-size: 22px;
+  color: teal;
+  transition: 500ms
+}
+#jump-to-top:hover .fa-arrow-up {
+  color: darkorange
+}
